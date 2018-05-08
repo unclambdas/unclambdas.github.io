@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+        <script>
+            function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+        </script>
+        
+        
+		<title>UNC LFE Roster</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html"> <img src="images/Logo.png" style="max-height: 100%;"></a></div>
+				<a href="#menu" style="color: #4169e1;">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+                    <li><img src="images/kanji.png" style="max-width: 100%;"></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+                    <li><a href="roster.html">Roster</a></li>
+                    <li><a href="active.html">Active Members</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="shave.html">Shave A Lambda</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Over 10,000 Worldwide</p>
+						<h2>Over 50 Brothers from The University of North Carolina at Chapel Hill</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p>Lambda Phi Epsilon</p>
+								<h2>人中王</h2>
+							</header>
+							
+                            <!-- Roster Tabs -->
+                            
+                            <style>
+                                .tabcontent {
+                                    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+                                }
+
+                                /* Go from zero to full opacity */
+                                @keyframes fadeEffect {
+                                    from {opacity: 0;}
+                                    to {opacity: 1;}
+                                }
+                                .tab {
+                                    display: inline-flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                }
+                                .tablinks {
+                                    margin: 5px;
+                                }
+                            </style>
+                            
+                            <div class="tab">
+                                <button class="tablinks" onclick="openCity(event, 'charter')" id="defaultOpen" style="background-color: #4169e1;">Charter Colossus</button>
+                                <button class="tablinks" onclick="openCity(event, 'alpha')" style="background-color: #4169e1;">Alpha Awakening</button>
+                                <button class="tablinks" onclick="openCity(event, 'beta')" style="background-color: #4169e1;">Beta Bushido</button>
+                                <button class="tablinks" onclick="openCity(event, 'gamma')" style="background-color: #4169e1;">Gamma Ganbaru</button>
+                                <button class="tablinks" onclick="openCity(event, 'delta')" style="background-color: #4169e1;">Delta Dynasty</button>
+                                <button class="tablinks" onclick="openCity(event, 'epsilon')" style="background-color: #4169e1;">Epsilon Empire</button>
+                                <button class="tablinks" onclick="openCity(event, 'zeta')" style="background-color: #4169e1;">Zeta Zenith</button>
+                                <button class="tablinks" onclick="openCity(event, 'eta')" style="background-color: #4169e1;">Exalted Etas</button>
+                            </div>
+
+                            <div id="charter" class="tabcontent" style="display:none";>
+                                    <h3 style="text-align: center">Charter Colossus Class (Spring 2013)</h3>
+                                    <ul style="list-style-type:none; text-align: center;" >
+                                        <img src="images/charter.jpg" style="align-self: center; max-height: 75%%; max-width: 75%">
+                                        <li>Pledge Master: Mike “Nooobody’s Bitch” Xi</li>
+                                        <li>Pledge Dad: Tianyu “Shuttlecock” Shi</li>
+                                        <li>#1. Wesley “1, 2 St3P” Shang</li>
+                                        <li>#2. Gopal “Cocoa Puff” Desai</li>
+                                        <li>#3. Jakovin “The Burning Bush” Lee</li>
+                                        <li>#4. Tim “Deadmaufive” Kang</li>
+                                        <li>#5. Masa “Buttercup” Watanabe</li>
+                                        <li>#6. Alex “Woody” Guzman</li>
+                                        <li>#7. Vincent “Phoenix Down” Wang</li>
+                                        <li>#8. Duc “PokeHerFace” Doan</li>
+                                        <li>#9. Adam “Old Dog New Tricks” Lee</li>
+                                        <li>#10. William “Skeet Shooter” Yen</li>
+                                        <li>#11. Chauncey “Febreze” Cleveland</li>
+                                        <li>#12. Joe “Cap’n ‘Murica” Baldock</li>
+                                        <li>#13. Kevin “Buzz” Cheng</li>
+                                        <li>#14. Zach “Tokem Pole” Jones</li>
+                                        <li>#15. Scott “Brack Swan” Dobbin</li>
+                                        <li>#16. Albert “My Sassy Boy” Kang</li>
+                                    </ul>
+                            </div>
+
+                            <div id="alpha" class="tabcontent" style="display:none";>
+                                    <h3 style="text-align: center">Alpha Awakening Class (Fall 2013)</h3>
+                                    <ul style="list-style-type:none; text-align: center;" >
+                                        <img src="images/alpha.jpg" style="align-self: center; max-height: 75%%; max-width: 75%">
+                                        <li>Pledge Master: Duc “PokeHerFace” Doan</li>
+                                        <li>Pledge Dad: Tim “Deadmaufive” Kang</li>
+
+                                        <li>#17. Joseph “Brack Knight” Shin</li>
+                                        <li>#18. Tin “B4nhKai” Nguyen</li>
+                                        <li>#19. Stephen “The Renaissance Man” Yan</li>
+                                        <li>#20. Stephen “Rex” Chen</li>
+                                        <li>#21. Tim “Clifford” Wu</li>
+                                        <li>#22. Brian “AtlaS.S.” Luong</li>
+                                    </ul>
+                            </div>
+
+                            <div id="beta" class="tabcontent" style="display:none";>
+                                    <h3 style="text-align: center">Beta Bushido Class (Fall 2014)</h3>
+                                    <ul style="list-style-type:none; text-align: center;" >
+                                        <img src="images/beta.jpg" style="align-self: center; max-height: 75%%; max-width: 75%">
+                                        <li>Pledge Master: Tim “Deadmaufive” Kang</li>
+                                        <li>Pledge Dad: Stephen “The Renaissance Man” Yan</li>
+
+                                        <li>#23. Chien “Astro Boy” Lim</li>
+                                        <li>#24. Tony “Akituh” Lieu</li>
+                                        <li>#25. Joey “5ky Bison” Yip</li>
+                                        <li>#26. Cheng “RhaeGal” Qiu</li>
+                                        <li>#27. Henry “UndHerDog” Lieu</li>
+                                        <li>#28. Kyle “FireFawkes” Elmore</li>
+                                        <li>#29. Benny “imPulse” Ho</li>
+                                        <li>#30. Ricky “Bullseye” Ho</li>
+                                        <li>#31. Stephen “Brack Mamba” Shin</li>
+                                        <li>#32. Aravind “Rocky” Subramanian</li>
+                                        <li>#33. Taylor “HighLandHer” Moore</li>
+                                    </ul>
+                            </div>
+                            
+                            <div id="gamma" class="tabcontent" style="display:none";>
+                                    <h3 style="text-align: center">Gamma Ganbarau Class (Fall 2015)</h3>
+                                    <ul style="list-style-type:none; text-align: center;" >
+                                        <img src="images/gamma.jpg" style="align-self: center; max-height: 75%%; max-width: 75%">
+                                        <li>Pledge Master: Stephen “The Renaissance Man” Yan</li>
+                                        <li>Pledge Dad: Benny “imPulse” Ho</li>
+
+                                        <li>#34. Kento “DeadPull” Yamamoto</li>
+                                    </ul>
+                            </div>
+                            
+                            <div id="delta" class="tabcontent" style="display:none";>
+                                    <h3 style="text-align: center">Delta Dynasty Class (Spring 2016)</h3>
+                                    <ul style="list-style-type:none; text-align: center;" >
+                                        <img src="images/delta.jpg" style="align-self: center; max-height: 75%%; max-width: 75%">
+                                        <li>Pledge Master: Joseph “Brack Knight” Shin</li>
+                                        <li>Pledge Dad: Tin “B4nhKai” Nguyen</li>
+
+                                        <li>#35. John “Creed” Tuong</li>
+                                        <li>#36. Brandon “SimBa” Pham</li>
+                                        <li>#37. Jin “CharMandHer” Sosankin</li>
+                                        <li>#38. Sam “Slinky” Samarakoon</li>
+                                        <li>#39. Jeff “HArry Spotter” Kim</li>
+                                        <li>#40. Keith “Dissonance” Copper, Jr.</li>
+                                        <li>#41. Rushi “Consonance” Marthala</li>
+                                        <li>#42. Phillip “The Notorious T.W.I.G.” Huynh</li>
+                                        <li>#43. Peter “ForHerst Gump” Zheng</li>
+                                    </ul>
+                            </div>
+                                
+                            <div id="epsilon" class="tabcontent" style="display:none";>
+                                    <h3 style="text-align: center">Epsilon Empire Class (Fall 2016)</h3>
+                                    <ul style="list-style-type:none; text-align: center;" >
+                                        <img src="images/epsilon.jpeg" style="align-self: center; max-height: 75%%; max-width: 75%">
+                                        <li>Pledge Master: Taylor “HighLandHer” Moore</li>
+                                        <li>Pledge Dad: Cheng “RhaeGal” Qiu</li>
+
+                                        <li>#44. Nguyen “Achilles” Vu</li>
+                                        <li>#45. Chan “CommandHer ‘N Brief’ Reagan</li>
+                                        <li>#46. Kiet ‘Akamaru’ Huynh</li>
+                                        <li>#47. Zhu ‘6yakuya’ Park</li>
+                                        <li>#48. Daniel ‘6oliath’ Kim</li>
+                                </ul>
+                            </div>
+                            
+                            <div id="zeta" class="tabcontent" style="display:none";>
+                                    <h3 style="text-align: center">Zeta Zenith Class (Spring 2017)</h3>
+                                    <ul style="list-style-type:none; text-align: center;" >
+                                        <img src="images/zeta.jpg" style="align-self: center; max-height: 75%%; max-width: 75%">
+                                        <li>Pledge Master: Benny “imPulse” Ho</li>
+                                        <li>Pledge Dad: Ricky “Bullseye” Ho</li>
+
+                                        <li>#49. Taejung “Brack OPS” Kim</li>
+                                        <li>#50. Michael “Jachico” Sosa</li>
+                                        <li>#51. Michael “Lucario” Nguyen</li>
+                                        <li>#52. Daniel “Wolfg4nG” Yoon</li>
+                                        <li>#53. Chonny “Scooby Snax” Martin</li>
+                                        <li>#54. Tanas “Sokka” Gangadhar</li>
+                                </ul>
+                            </div>
+                            
+                            <div id="eta" class="tabcontent" style="display:none";>
+                                    <h3 style="text-align: center">Exalted Eta Class (Spring 2017)</h3>
+                                    <ul style="list-style-type:none; text-align: center;" >
+                                        <img src="images/eta.jpg" style="align-self: center; max-height: 75%%; max-width: 75%">
+                                        <li>Pledge Master: Nguyen “Achilles” Vu</li>
+                                        <li>Pledge Dad: Kiet “Akamaru” Huynh</li>
+
+                                        <li>#55. Charlie “Sibeerian” Chiem</li>
+                                        <li>#56. Harvey “H.A.M.m” Liu</li>
+                                        <li>#57. Raheem “MayWetHer” Moore</li>
+                                        <li>#58. Marlon “Genos” MacIntyre</li>
+                                        <li>#59. Sung “The HIDDEN Character – Doom” Kim</li>
+                                        <li>#60. Maximilian “Grimm” Kremer</li>
+                                </ul>
+                            </div>
+                                        
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://twitter.com/unclambdas?lang=en" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/unclambdas/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/unclambdas/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto:unclambdas@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Associate Chapter of Lambda Phi Epsilon at The University of North Carolina at Chapel Hill. Inspired by Hielo by TEMPLATED. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+        <script>document.getElementById("defaultOpen").click();</script>
+
+	</body>
+</html>
