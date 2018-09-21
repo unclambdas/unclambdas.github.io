@@ -10,6 +10,21 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+		</style>
 	</head>
 	<body>
         
@@ -97,7 +112,7 @@
 			<section id="one" class="wrapper style2">
 				<div class="inner">
 					<div class="box">
-                        <div class="content">
+                        <div class="content video-responsive">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/BCNi-LK3iAA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="display:block;margin: 0 auto;"></iframe>
                         </div>
                     </div>
