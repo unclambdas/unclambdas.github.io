@@ -6,22 +6,43 @@
 -->
 <html>
 	<head>
+        <!-- Script for Tabs -->
         <script>
             function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
             }
         </script>
         
+        <!-- Script for Modal Boxes -->
+        <script>
+            var i, modal, modallinks;
+            modal = document.getElementsByClassName("modal");
+            modallinks = document.getElementsByClassName("modallinks");
+            
+            function openModal(evt, modalName) {
+                
+                for (i = 0; i < modal.length; i++) {
+                    modal[i].style.display = "none";
+                }
+                
+                for (i = 0; i < modallinks.length; i++) {
+                     modallinks[i].className = modallinksinks[i].className.replace(" active", "");
+                }
+                document.getElementById(modalName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        
+            </script>
         
 		<title>UNC LFE Roster</title>
 		<meta charset="utf-8" />
@@ -100,7 +121,7 @@
                                 <button class="tablinks" onclick="openCity(event, 'epsilon')" style="background-color: #4169e1;">Epsilon Empire</button>
                                 <button class="tablinks" onclick="openCity(event, 'zeta')" style="background-color: #4169e1;">Zeta Zenith</button>
                                 <button class="tablinks" onclick="openCity(event, 'eta')" style="background-color: #4169e1;">Exalted Etas</button>
-				<button class="tablinks" onclick="openCity(event, 'theta')" style="background-color: #4169e1;">Triumphant Thetas</button>
+				                <button class="tablinks" onclick="openCity(event, 'theta')" style="background-color: #4169e1;">Triumphant Thetas</button>
                             </div>
 
                             <div id="charter" class="tabcontent" style="display:none";>
@@ -221,8 +242,41 @@
                                         <li>#50. Michael “Jachico” Sosa</li>
                                         <li>#51. Michael “Lucario” Nguyen</li>
                                         <li>#52. Daniel “Wolfg4nG” Yoon</li>
-                                        <li>#53. Chonny “Scooby Snax” Martin</li>
-                                        <li>#54. Tanas “Sokka” Gangadhar</li>
+                                        <li onclick="openModal(event, 'chonnyModal')">#53. Chonny “Scooby Snax” Martin</li>
+                                        <div id="chonnyModal" class="modal">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <span class="close" onclick="chonnyModal.style.display = 'none';">&times;</span>
+                                                    <h2>#53. Chonny “Scooby Snax” Martin</h2>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p></p>
+                                                <img src="images/Modals/chonny.jpeg" style="align-self: center; max-height: 25%; max-width: 25%">
+                                                  <p><strong>Big Bro:</strong> #21. Tim “Clifford” Wu </p>
+                                                  <p><strong>Major(s):</strong> Computer Science</p>
+                                                  <p><strong>Minor(s):</strong> Chinese</p>
+                                                    <h1>A little about Chonny...</h1>
+                                                  <h1>What's good, y'all already know who it is. Your favorite CS/Chinese major from Bangkok (born 'n raised). I joined Lambda Phi Epsilon at UNC the Spring semester if 2017, and have not regretted the decision even once. Since crossing Lambdas, I've had some of the most memorable times in my life and have met people who I couldn't imagine making memories without. 
+
+I've a lot of pastimes, but not enough time that needs passing. Some of these include  gymming, playing pong, diving in the guts, and most of all, having fun. Fun, of course, is subjective, but if y'all haven't bombed with me then it doesn't count.
+
+If ya ever want to inhale some good food or play smash, hit me up. Else, hit me up still</h1>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <li onclick="openModal(event, 'tanasModal')">#54. Tanas “Sokka” Gangadhar</li>
+                                        <div id="tanasModal" class="modal">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <span class="close" onclick="tanasModal.style.display = 'none';">&times;</span>
+                                                    <h2>#54. Tanas “Sokka” Gangadhar</h2>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <p>I like food</p>
+                                                  <p>Some other text...</p>
+                                                </div>
+                                              </div>
+                                        </div>
                                 </ul>
                             </div>
                             
@@ -242,7 +296,7 @@
                                 </ul>
                             </div>
 			
-			<div id="theta" class="tabcontent" style="display:none";>
+			                 <div id="theta" class="tabcontent" style="display:none";>
                                     <h3 style="text-align: center">Triumphant Theta Class (Spring 2018)</h3>
                                     <ul style="list-style-type:none; text-align: center;" >
                                         <img src="images/theta.jpg" style="align-self: center; max-height: 75%%; max-width: 75%">
@@ -283,7 +337,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-        <script>document.getElementById("defaultOpen").click();</script>
+            <script>document.getElementById("defaultOpen").click();</script>
 
 	</body>
 </html>
