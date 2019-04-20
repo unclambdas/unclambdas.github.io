@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>UNCCH Shave a Lambda</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">人中王</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home Page</a></li>
+							<li><a href="activehouse.html">Active House</a></li>
+							<li><a href="chapterroster.html">Chapter Roster</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li class="active"><a href="shave.html">Shave a Lambda</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/unclambdas?lang=en" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/unclambdas/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/unclambdas/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+                        
+                        <div class="table-wrapper">
+                            <table class="alt">
+                                <thead>
+                                    <tr>
+                                        <th><h2>Bro</h2></th>
+                                        <th><h2>Total Votes</h2></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="shavestuff">
+                                </tbody>
+                            </table>
+                        </div>
+
+                            
+                                
+				    </div>
+                                
+
+								
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; UNCCH Lambda Phi Epsilon</li><li>Design: <a href="https://html5up.net">HTML5 UP</a> and edited by Johnny Ni</li></ul>
+					</div>
+
+			</div>
+
+                
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+
+                             // ID of the Google Spreadsheet
+                             var spreadsheetID = "1M_5VmWHo29CwOhwIsWApNQsigo9q2UZQB_yE8FtqkAQ";
+
+                             // Make sure it is public or set to Anyone with link can view 
+                             var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
+
+                             $.getJSON(url, function(data) {
+
+                              var entry = data.feed.entry;
+
+                              $(entry).each(function(){
+                                // Column names are name, age, etc.
+                                $('#shavestuff').append("<tr><td>" +this.gsx$bro.$t+ "</td><td>" +this.gsx$votes.$t+ " votes</td></tr>");
+                                    
+                                    
+                                    
+                                    
+                                    
+                                   /* '<h2>'+this.gsx$bro.$t+'</h2>');
+                                $('.totalc').append('<h2>'+this.gsx$votes.$t+' votes</h2>');
+                                **/
+                              });
+
+                             });
+
+            </script>
+            
+
+	</body>
+</html>
