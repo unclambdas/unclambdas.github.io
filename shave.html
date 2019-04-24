@@ -41,12 +41,17 @@
 				<!-- Main -->
 					<div id="main">
                         
+                        <header class="major">
+									<h1>Spring 2019<br />
+									Shave-A-Lambda Leaderboard</h1>
+								</header>
+                        
                         <div class="table-wrapper">
                             <table class="alt sortable">
                                 <thead>
                                     <tr>
                                         <th><h2>Bro</h2></th>
-                                        <th><h2>Total Votes</h2></th>
+                                        <th class="sorttable_numeric"><h2>Total Votes</h2></th>
                                     </tr>
                                 </thead>
                                 <tbody id="shavestuff">
@@ -92,21 +97,18 @@
 
                               $(entry).each(function(){
                                 // Column names are name, age, etc.
-                                $('#shavestuff').append("<tr><td>" +this.gsx$bro.$t+ "</td><td>" +this.gsx$votes.$t+ " votes</td></tr>");
+                                $('#shavestuff').append("<tr><td>" +this.gsx$bro.$t+ "</td><td>" +parseInt(this.gsx$votes.$t)+ " votes</td></tr>");
                                     
                                     
                                     
                                     
-                                    
-                                   /* '<h2>'+this.gsx$bro.$t+'</h2>');
-                                $('.totalc').append('<h2>'+this.gsx$votes.$t+' votes</h2>');
-                                **/
                               });
 
                              });
 
             </script>
             <script src="assets/js/sorttable.js"></script>
+            
             
 
 	</body>
