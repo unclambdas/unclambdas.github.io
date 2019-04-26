@@ -42,9 +42,11 @@
 					<div id="main">
                         
                         <header class="major">
-									<h1>Spring 2019<br />
-									Shave-A-Lambda Leaderboard</h1>
-								</header>
+									<h2>Spring 2019<br />
+									Shave-A-Lambda Leaderboard</h2>
+				        </header>
+                        
+                        <h1 id="totalmoney" class="major">Total Money Raised: </h1>
                         
                         <div class="table-wrapper">
                             <table class="alt sortable">
@@ -97,12 +99,11 @@
 
                               $(entry).each(function(){
                                 // Column names are name, age, etc.
-                                $('#shavestuff').append("<tr><td>" +this.gsx$bro.$t+ "</td><td>" +parseInt(this.gsx$votes.$t)+ " votes</td></tr>");
-                                    
-                                    
-                                    
-                                    
+                                $('#shavestuff').append("<tr><td>" +this.gsx$bro.$t+ "</td><td>" +parseInt(this.gsx$votes.$t)+ " votes</td></tr>");   
+                                $('#totalmoney').append(this.gsx$money.$t);
                               });
+                                 
+                                 
 
                              });
 
