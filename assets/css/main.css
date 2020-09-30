@@ -2901,7 +2901,15 @@ input, select, textarea {
 		header > p {
 			font-style: italic;
 		}
-
+		ul {
+			margin-bottom: 0px;
+		}
+		div.statement {
+			text-indent: 50px;
+		}
+		div.statement > p {
+			margin-bottom: 0px;
+		}
 		header > h1 + p {
 			font-size: 1.1rem;
 			margin-top: -0.5rem;
